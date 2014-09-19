@@ -27,7 +27,7 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 
 public class StockWatcher implements EntryPoint { 
 
-	private static final int REFRESH_INTERVAL = 4000; // ms
+	private static final int REFRESH_INTERVAL = 6000; // ms
 	private VerticalPanel mainPanel = new VerticalPanel();  
 	private FlexTable stocksFlexTable = new FlexTable();  
 	private HorizontalPanel addPanel = new HorizontalPanel();  
@@ -40,8 +40,8 @@ public class StockWatcher implements EntryPoint {
 	private VerticalPanel loginPanel = new VerticalPanel();	
 	private Label loginLabel = new Label(
 	      "Please sign in to your Google Account to access the StockWatcher application.");	
-	private Anchor signInLink = new Anchor("Log In");
-	private Anchor signOutLink = new Anchor("Log Out");
+	private Anchor signInLink = new Anchor("Lala In");
+	private Anchor signOutLink = new Anchor("Lala Out");
 	
 	private final StockServiceAsync stockService = GWT.create(StockService.class);
 
