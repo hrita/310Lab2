@@ -40,8 +40,8 @@ public class StockWatcher implements EntryPoint {
 	private VerticalPanel loginPanel = new VerticalPanel();	
 	private Label loginLabel = new Label(
 	      "Please sign in to your Google Account to access the StockWatcher application.");	
-	private Anchor signInLink = new Anchor("Log In NOW");
-	private Anchor signOutLink = new Anchor("Log Out NOW");
+	private Anchor signInLink = new Anchor("Lala In");
+	private Anchor signOutLink = new Anchor("Lala Out");
 	
 	private final StockServiceAsync stockService = GWT.create(StockService.class);
 
@@ -237,7 +237,7 @@ private void undisplayStock(String symbol) {
    * Generate random stock prices.
    */
   private void refreshWatchList() {
-    final double MAX_PRICE = 200.0; // $100.00
+    final double MAX_PRICE = 300.0; // $100.00
     final double MAX_PRICE_CHANGE = 0.02; // +/- 2%
 
     StockPrice[] prices = new StockPrice[stocks.size()];
@@ -300,5 +300,4 @@ private void undisplayStock(String symbol) {
 
     changeWidget.setStyleName(changeStyleName);
   }
-
 }
